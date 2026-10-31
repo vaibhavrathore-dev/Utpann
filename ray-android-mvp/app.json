@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "RAY",
+    "slug": "ray-mobile-mvp",
+    "version": "0.1.0",
+    "scheme": "ray",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0D13",
+    "android": {
+      "package": "com.ray.circular.demo",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "RAY uses the camera to photograph materials and help place designs in AR."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RAY lets you select a material photo."
+        }
+      ],
+      [
+        "@reactvision/react-viro",
+        {
+          "android": {
+            "xRMode": "AR"
+          },
+          "provider": "none"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "df38379f-658a-4123-9435-3e7078693147"
+      }
+    }
+  }
+}

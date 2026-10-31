@@ -1,0 +1,18 @@
+RAY NATIVE ANDROID MVP (NOT NEXT.JS)
+
+1. Extract RAY ZIP using Extract All (don't open the ZIP as a folder).
+2. In Windows File Explorer open the extracted ray-android-mvp folder (must contain package.json).
+3. Click address bar, enter "powershell" and press Enter.
+4. Run:
+
+npm install --include=optional
+npx expo-doctor
+npx expo prebuild --platform android --clean
+npx expo run:android --device
+npx expo start --dev-client
+
+You need a physical ARCore-compatible Android phone with USB debugging and Android SDK installed for local native builds. Do not use Expo Go for ViroReact.
+
+Open the app; tap the top-right studio button > Launch AR cube check to verify native AR on your phone.
+
+If npm install or prebuild fails, paste the exact console output before changing package versions.
